@@ -31,6 +31,8 @@ def can_two_movies_fill_flight?(movie_lengths, flight_length)
 
     matching_second_movie_length = flight_length - first_movie_length
 
+    p movie_lengths_seen
+
     if movie_lengths_seen.include?(matching_second_movie_length)
       # we found the match
        true
