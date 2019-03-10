@@ -15,7 +15,7 @@ def reverse_words!(message)
     for i in 0..message.length
   
       # found the end of the current word!
-      if (message[i] == ' ') || (i == message.length)
+      if (message[i] == ' ') || (i == message.length) 
   
         reverse_characters!(message, current_word_start_index, i - 1)
   
@@ -39,9 +39,16 @@ def reverse_words!(message)
       right_index -= 1
   
     end
+    message.gsub!(',', '')
+
+    puts message
+
   end
 
 
   #Hashing algorithm, Consitent hashing
   # LRU (Least resource used)
   # 
+
+
+reverse_words!("g,o,d a,m i")
